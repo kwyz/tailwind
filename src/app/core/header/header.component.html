@@ -1,0 +1,49 @@
+<header class="bg-white dark:bg-gray-800">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <img width="24" src="assets/logo.png" alt="Auction" />
+                <span class="mx-2 font-bold text-2xl"> OnlineAuction </span>
+            </div>
+            <div class="nav__container w-2/6">
+                <ul class="nav__list flex items-center justify-between">
+                    <li class="nav__item active text-sm font-bold text-gray-500 dark:hover:text-white hover:text-gray-900 flex items-center">
+                        <a href="#">Our Solution</a>
+                    </li>
+                    <li class="nav__item text-sm font-bold text-gray-500 dark:hover:text-white hover:text-gray-900 flex items-center">
+                        <a href="#">Our Clients</a>
+                    </li>
+                    <li class="nav__item text-sm font-bold text-gray-500 dark:hover:text-white hover:text-gray-900 flex items-center">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="nav__item text-sm font-bold text-gray-500 dark:hover:text-white hover:text-gray-900 flex items-center">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="nav__item text-sm font-bold dark:hover:text-white text-gray-500 hover:text-gray-900 flex items-center">
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex justify-end items-center">
+                <button class="btn btn-sm btn-ghost rounded-box">
+                    <span class="mx-2 text-primary">Log In</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" id="footer-sample-full" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="text-primary iconify iconify--feather">
+                        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                            <path d="M10 17l5-5l-5-5"></path>
+                            <path d="M15 12H3"></path>
+                        </g>
+                    </svg>
+                </button>
+                <div class="flex-none mx-4">
+                    <button class="btn btn-square btn-ghost dark:text-white text-indigo-700" (click)="SwitchDarkMode()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+                            <path *ngIf="!isDarkModeOn" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            <path *ngIf="isDarkModeOn" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

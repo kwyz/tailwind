@@ -1,0 +1,29 @@
+
+.nav__container
+    height: 100%
+
+.nav__list
+    height: 100% !important
+
+.nav__item
+    position: relative
+    height: 100% !important
+
+.nav__item.active
+    @apply text-primary
+
+.dark >* .nav__item.active
+    @apply text-white
+
+.nav__item.active:hover
+    @apply text-primary-focus dark:text-white
+
+.nav__item.active:before
+    bottom: 0
+    content: ""
+    height: 2px
+    position: absolute
+    width: 100%
+    -webkit-transition: linear .25s all
+    transition: linear .25s all
+    @apply bg-primary
